@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather forecast</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/photos/favicon">
+</head>
+<body>
+  <div class="search_head">
+    <div class="heading_p">
+      <img src="/photos/favicon" alt="logo" >
+      <div class="head">Weather Forecast:<br>Weather Around The World</div> 
+    </div>
+    <div class="search_bar_head">
+      <input list="input" type="search" class="search_bar" placeholder="Search for City">
+      <datalist id="input">
+        <option value="1st">first</option>
+        <option value="2nd">second</option>
+      </datalist>
+      <button id="searchbtn">Search <img src="photos/search.png" alt="search" class="search_icon"></button>
+    </div>
+  </div>
+  <div class="next_part">
+    <div class="fixed"><h2>Weather in some famous cities</h2></div>
+    <div class="fixed_bar">
+      <div id="bars" class="bar1"><div id="loaders" class="loader1"></div><img class="icon1" id="icons" src="" alt=""><br><p id="paras"class="city1"></p></div>
+      <div id="bars" class="bar2"><div id="loaders" class="loader2"></div><img class="icon2" id="icons" src="" alt=""><br><p id="paras"class="city2"></p></div>
+      <div id="bars" class="bar3"><div id="loaders" class="loader3"></div><img class="icon3" id="icons" src="" alt=""><br><p id="paras"class="city3"></p></div>
+      <div id="bars" class="bar4"><div id="loaders" class="loader4"></div><img class="icon4" id="icons" src="" alt=""><br><p id="paras"class="city4"></p></div>
+    </div>
+    <div class="your_weather">
+      <h2>Want to know weather in your city?</h2>
+      <button onclick="getyourweather()" class="your_button">Click me</button>
+    </div>
+    <div class="main_part">
+      <div class="loader">
+
+      </div>
+
+      <div class="weather_block">
+        <div class="head1">Now</div>
+        <div class="main_img">
+          <img class ="main_img_act" src="" alt="wait">
+        </div>
+        <div class="temp"></div>
+        <div class="descrip"></div>
+        <div class="feels"></div>
+        <div class="forecast"></div>
+        <div class="wind"></div>
+      </div>
+
+      <div class="main_info">
+        <table class="info">
+          <tr><th>Location:</th><td></td></tr>
+          <tr><th>Current time: &emsp; &nbsp; </th><td></td></tr>
+          <tr><th>Latest updated:</th><td></td></tr>
+          <tr><th>Visibility:</th><td></td></tr>
+          <tr><th>Pressure:</th><td></td></tr>
+          <tr><th>Humidity:</th><td></td></tr>
+          <tr><th>Dew point:</th><td></td></tr>
+          <tr><th>UV Index:</th><td></td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

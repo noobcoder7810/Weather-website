@@ -1,0 +1,238 @@
+body{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  display: flex;
+  background-color: #F5F7FA;
+}
+h2{
+  color: #22223B;
+}
+.search_head{
+  position: fixed;
+  /*background-color: rgb(255, 217, 90);*/
+  height: 16vh;
+  width: 100vw;;
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/photos/searchback.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  z-index: 1;
+}
+.heading_p img {
+  width: 8vh;
+  height: 8vh;
+  margin-right: 10px;
+}
+.heading_p{
+  font-weight:bolder;
+  color: #4d45f0d9;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+}
+.head{
+  flex-wrap: wrap;
+}
+.search_head input{
+  height: 6vh;
+  border: 0;
+  outline: 0;
+  border-top-left-radius: 7px ;
+  border-bottom-left-radius: 7px;
+  width: 30vw;
+  padding-left: 8px ;
+}
+.search_head input{
+  display: flex;
+}
+.search_head button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(52, 155, 251, 0.83);
+  border: 0;
+  outline: 0;
+  border-top-right-radius: 7px ;
+  border-bottom-right-radius: 7px;
+  height: 6.2vh;
+  cursor: pointer;
+}
+.search_bar_head{
+  display: flex;
+  align-items: center;
+}
+.fixed {
+  margin-left: 6vw ;
+  display: flex;
+  flex-wrap: wrap;
+}
+.your_weather{
+  margin-left: 6vw ;
+  margin-top: 3rem;
+}
+.next_part{
+  margin-top: 16vh;
+  width: 80vw;
+  margin-left: 10vw;
+  background-color: rgba(216, 98, 157, 0.526);
+  height: 200rem;
+}
+.your_button{
+  color: #FFFFFF;
+  border: 0;
+  outline: 0;
+  border-radius: 6px;
+  background-color: #d97b17;
+}
+.fixed_bar{
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly ;
+  flex-wrap: wrap;
+  position: relative;
+}
+#bars {
+  width: 16rem;
+  position: relative;
+  min-height: 85px;
+}
+#icons{
+  margin-left: 25px;
+  width: 10rem;
+  background-color: #827cff;
+}
+#paras{
+  color: 	#22223B;
+  padding-left: 2rem;
+  margin-top: 0;
+  padding-top: -5rem;
+}
+#citycountry{
+  font-weight: bold;
+}
+.main_part {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  position: relative;
+} 
+.weather_block {
+  /* background-color: #cde7fd; */
+  background-color: #FFFFFF;
+  color: #22223B;
+  border-left: 4px solid #c3d3e0;
+  padding: 6px 12px;
+  margin-top: 20px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  width: 20rem;
+  position: relative;
+  z-index: 0;
+  display: none;
+  
+}
+.main_info{
+  display: none;
+  margin: 18px 40px;
+  text-align: left;
+}
+.head1{
+  font-weight: bold;
+  font-size: 25px;
+}
+.main_img_act {
+  background-color:#6C64FB;
+}
+.main_img img{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 6.1rem;
+}
+.temp{
+  font-size: 25px;
+  padding-top: 2px;
+}
+.descrip {
+  padding-top: 8px;
+}
+.feels{
+  padding-top: 56px;
+  font-size: 18px;
+}
+.forecast  {
+  font-size: 18px;
+  padding-top: 4px;
+}
+.wind{
+  font-size: 18px;
+  padding-top: 4px;
+}
+.info{
+  border-collapse: collapse;
+  height: 15rem;
+}
+th, td{
+  border-bottom: 1px solid rgba(128, 128, 128, 0.703); 
+}
+#loaders{
+  margin-left: 20%;
+}
+.loader1 {
+  position: absolute;
+  
+  width: 50px;
+  height: 50px;
+  border: 6px solid ;
+  border-color: rgb(252, 4, 4) transparent;
+  border-radius: 50%;
+  animation: load 1s ease-in-out infinite ;
+}
+.loader2 {
+  position: absolute;
+  
+  width: 50px;
+  height: 50px;
+  border: 6px solid ;
+  border-color: rgb(252, 4, 4) transparent;
+  border-radius: 50%;
+  animation: load 1s ease-in-out infinite ;
+}
+.loader3 {
+  position: absolute;
+  
+  width: 50px;
+  height: 50px;
+  border: 6px solid ;
+  border-color: rgb(252, 4, 4) transparent;
+  border-radius: 50%;
+  animation: load 1s ease-in-out infinite ;
+}
+.loader4 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 6px solid ;
+  border-color: rgb(252, 4, 4) transparent;
+  border-radius: 50%;
+  animation: load 1s ease-in-out infinite ;
+}
+.loader {
+  display: none;
+  position: absolute;
+  left: 3rem;
+  width: 200px;
+  height: 200px;
+  border: 10px solid ;
+  border-color: rgb(255, 255, 255) transparent;
+  border-radius: 50%;
+  animation: load 1s ease-in-out infinite ;
+}
+ @keyframes load {
+  100% {
+    transform: rotate(360deg);
+  }
+} 
